@@ -67,12 +67,12 @@ let result = []
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceroll = 'Try again later.';
+let diceRoll = 'Try again later.';
 if (luckyNumber === 2 && adventurous){
-  diceroll = 'Roll the dice!';
-  console.log(diceroll);
+  diceRoll = 'Roll the dice!';
+  console.log(diceRoll);
 }
-console.log(diceroll);
+console.log(diceRoll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
@@ -102,14 +102,19 @@ let petStatus;
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets = [];
-if (pets < friendsPets){
-  mostPets = 'friendsPets';
+let mostPets;
+//console.log( ' The value of pets is', pets);
+//console.log( ' The value of friendsPets is', friendsPets);
+
+if (pets > friendsPets){
+  mostPets = pets;
+  console.log( ' friends pets is greater ', mostPets );
 }
-else (pets > friendsPets);{
-  mostPets = 'pets';
+else (pets < friendsPets);{
+  mostPets = friendsPets;
+  console.log( ' pets is greater', mostPets );
 }
-console.log (mostPets);
+//console.log (mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
